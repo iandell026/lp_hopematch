@@ -209,25 +209,68 @@ a:hover { color: var(--primary-color); }
 }
 
 .btn-action {
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 22px;
   border-radius: 14px;
   width: 70%;
   text-wrap: false;
-  background-color: #4CAF50; /* Verde base */
-  background-image: linear-gradient(to right, #4CAF50, #5BCB61); /* Gradiente de verde */
   color: #fff;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+}
 
+.btn-ajuda {
+  background-color: rgba(160, 0, 0, 0.8); /* Vermelho base */
+  background-image: linear-gradient(140deg, rgba(160, 0, 0, 0.8) 0%, rgba(198, 33, 40, 0.8) 100%); /* Gradiente em vermelho */
+  color: white;
+}
+
+.btn-ajuda:hover {
+  box-shadow: 8px 8px 8px #d4d6d4;
+  transform: scale(1.1);
+  color: white;
+}
+
+.btn-apadrinhar {
+  background-color: #FFD700;
+  background-image: linear-gradient(to right, #FFD700, #FFEA94);
+  color: black;
+  text-wrap: nowrap;
+}
+
+.btn-voluntario {
+  background-color: #4CAF50;
+  background-image: linear-gradient(to right, #4CAF50, #5BCB61);
+  color: white;
+  text-wrap: nowrap;
+}
+
+.btn-voluntario:hover {
+  box-shadow: 8px 8px 8px #d4d6d4;
+  transform: scale(1.1);
+  color: white;
+}
+
+.btn-terceiros {  
+  background-color: #FFD700;
+  background-image: linear-gradient(to right, #FFD700, #FFEA94);
+  color: black;
+  text-wrap: nowrap;
 }
 
 .btn-action:hover{
-  box-shadow: 8px 8px 8px #49b34d;
+  box-shadow: 8px 8px 8px #d4d6d4;
   transform:scale(1.1);
 }
+/*
+* Seção Como Funciona
+*/
 
+.titulo-acoes{
+  text-wrap: nowrap;
+  font-size: 24px;
+}
 
 /*
 * Seção Números
