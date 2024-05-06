@@ -1,0 +1,208 @@
+:root {
+  --primary-color: #0a1118;
+  --primary-color-highlight: #233D54;
+  --bs-body-bg: #FBF0F6;
+  --bs-body-font-family: 'Montserrat', sans-serif;
+}
+
+html {scroll-behavior: smooth;}
+
+a { color: var(--primary-color); }
+a:hover { color: var(--primary-color); }
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bs-dark); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/* 
+  @media (min-width: 544px)  {}
+  @media (min-width: 768px)  {}
+  @media (min-width: 992px)  {}
+  @media (min-width: 1200px) {}
+  @media (min-width: 1400px) {}
+  @media (min-width: 1600px) {} 
+*/
+
+/*
+* Custom Container
+*/
+.container-custom {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container-custom { width: 1140px; }
+}
+
+@media (min-width: 1400px) {
+  .container-custom { width: 1340px; }
+}
+
+@media (min-width: 1600px) {
+  .container-custom { width: 1520px; }
+}
+
+/*
+* Header
+*/
+.header {
+  z-index: 2;
+}
+
+.btn-xl {
+  
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 14px;
+  width: auto;
+  /* text-wrap: nowrap; */
+  /* background-color: #ebebeb; Verde base */
+  /* background-image: linear-gradient(to right, #4CAF50, #5BCB61); Gradiente de verde */
+  /* color: #fff; */
+  /* border: none; */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+
+/* Estilo padrão para todos os cards */
+.card {
+  transition: transform 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito de hover nos cards */
+.card:hover {
+  transform: scale(1.05); /* Aumenta um pouco o tamanho do card ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+@media (min-width: 544px) {
+  .steps {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .steps__section-thumbnail {
+    height: auto;
+  }
+}
+
+.btn-action {
+  padding: 10px 15px;
+  font-size: 22px;
+  border-radius: 14px;
+  width: 70%;
+  text-wrap: false;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-ajuda {
+  background-color: rgba(160, 0, 0, 0.8); /* Vermelho base */
+  background-image: linear-gradient(140deg, rgba(160, 0, 0, 0.8) 0%, rgba(198, 33, 40, 0.8) 100%); /* Gradiente em vermelho */
+  color: white;
+}
+
+.btn-ajuda:hover {
+  box-shadow: 8px 8px 8px #d4d6d4;
+  transform: scale(1.1);
+  color: white;
+}
+
+.btn-apadrinhar {
+  background-color: #FFD700;
+  background-image: linear-gradient(to right, #FFD700, #FFEA94);
+  color: black;
+  text-wrap: nowrap;
+}
+
+.btn-voluntario {
+  background-color: #4CAF50;
+  background-image: linear-gradient(to right, #4CAF50, #5BCB61);
+  color: white;
+  text-wrap: nowrap;
+}
+
+.btn-voluntario:hover {
+  box-shadow: 8px 8px 8px #d4d6d4;
+  transform: scale(1.1);
+  color: white;
+}
+
+.btn-terceiros {  
+  background-color: #FFD700;
+  background-image: linear-gradient(to right, #FFD700, #FFEA94);
+  color: black;
+  text-wrap: nowrap;
+}
+
+.btn-action:hover{
+  box-shadow: 8px 8px 8px #d4d6d4;
+  transform:scale(1.1);
+}
+
+.titulo-servicos{
+  font-size: 25px;
+  text-wrap: nowrap;
+}
+
+/*
+* Footer
+*/
+.footer .border-highlight {
+  border-top: 1px solid var(--primary-color-highlight);
+}
+
+
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .conteudo-destaque{
+    text-align: center;
+  }
+  
+  .btn-action {
+    width: auto; /* Alinhamento ao centro em dispositivos móveis */
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .numeros{
+    text-align: center;
+  }
+
+  .acao-item{
+    margin-top: 5%;
+  }
+
+  .conteudo{
+    text-align: center;
+    /* text-wrap: nowrap; */
+  }
+
+  .titulo-servicos{
+    font-size: 20px;
+    text-wrap: nowrap;
+  }
+}
