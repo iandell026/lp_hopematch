@@ -210,16 +210,7 @@ a:hover { color: var(--primary-color); }
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
 }
 
-@media (min-width: 544px) {
-  .steps {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
 
-  .steps__section-thumbnail {
-    height: auto;
-  }
-}
 
 .btn-action {
   padding: 10px 15px;
@@ -301,13 +292,6 @@ a:hover { color: var(--primary-color); }
 }
 
 
-/*
-* Footer
-*/
-.footer{
-  border-top: 5px ;
-  background-color:#d4d6d4;
-}
 
 
 /* Media query para dispositivos móveis */
